@@ -6,3 +6,7 @@ variable "aws_profile" {
   type    = string
   default = "techstarter"
 }
+
+variable "bucket_name" {
+  type = string
+}

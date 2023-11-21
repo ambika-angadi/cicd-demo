@@ -7,8 +7,8 @@ resource "aws_s3_bucket" "my_bucket" {
   }
 }
 
-resource "aws_s3_bucket_website_configuration" "this" {
-  bucket = aws_s3_bucket.this.id
+resource "aws_s3_bucket_website_configuration" "my_bucket" {
+  bucket = aws_s3_bucket.my_bucket.id
 
   index_document {
     suffix = "index.html"
@@ -20,8 +20,8 @@ resource "aws_s3_bucket_website_configuration" "this" {
 
 }
 
-resource "aws_s3_bucket_public_access_block" "this" {
-  bucket = aws_s3_bucket.this.id
+resource "aws_s3_bucket_public_access_block" "my_bucket" {
+  bucket = aws_s3_bucket.my_bucket.id
 
   block_public_acls       = false
   block_public_policy     = false

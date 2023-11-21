@@ -1,4 +1,5 @@
-resource "aws_s3_bucket" "this" {
+#resource "aws_s3_bucket" "this" {
+resource "aws_s3_bucket" "your_bucket_name" {
   bucket = var.bucket_name
 
   tags = {

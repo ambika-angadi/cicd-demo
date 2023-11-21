@@ -9,7 +9,7 @@ module "s3-website" {
 }
 
 output "bucket_name" {
-  value = aws_s3_bucket.your_bucket_name.bucket
+  value = aws_s3_bucket.my_bucket.bucket
 }
 
 variable "bucket_name" {

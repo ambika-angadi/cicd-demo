@@ -8,9 +8,9 @@ module "s3-website" {
   bucket_name = var.bucket_name
 }
 
-# output "bucket_name" {
-#   value = aws_s3_bucket.my_bucket.bucket
-# }
+output "bucket_name" {
+  value = aws_s3_bucket.my_bucket.bucket
+}
 
 variable "bucket_name" {
   description = "Name of the S3 bucket"
